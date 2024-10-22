@@ -88,7 +88,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/bg1.jpg'); /* Adjust the image path as needed */
+    background-image: url('/image/bg1.jpg'); /* Adjust the image path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
