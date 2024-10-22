@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Decode Edge</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .tit a.active {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        #home, #services, #about, #contact {
+            scroll-margin-top: 80px; 
+        }
+
+        navbar {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1000;
+        }
+    </style>
+  </head>
+  
+  <body>    
+    <navbar>
+        <div class="navmain">
+            <div class="logo">
+                <img src="/D.jpeg" alt="Decode edge">
+            </div>
+            <div class="titles">
+                <div class="tit">
+                    <li><a href="#home" data-section="home">Home</a></li>
+                    <li><a href="#services" data-section="services">What we Do</a></li>
+                    <li><a href="#about" data-section="about">Who we are</a></li>
+                    <li><a href="#contact" data-section="contact">Contact us</a></li>
+                </div>
+            </div> 
+        </div>
+    </navbar>
+
+    <contant id="home">
+        <div class="cmain">
+          <h1>Unlock Premium With Decode Edge <br> Data to Accelerate Your AI Innovation</h1>  
+        </div>
+    </contant>
+    
+    <div class="blank">
+    </div>
+
+    <section id="services" class="de-services">
+        <div class="de-services__container">
+            <div class="de-services__header">
+                <h1 class="de-services__title de-services__title--animated">Our Services</h1>
+                <p class="de-services__subtitle">Discover our cutting-edge data solutions for AI and machine learning</p>
+            </div>
+            <div class="de-services__grid">
+                <!-- Image Data Collection -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/bgffff.jpeg" alt="Image Data Collection" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.9 13.98l2.1 2.53 3.1-3.99 4.9 6.48H5l3.9-5.02z"/>
+                                <circle cx="15" cy="8" r="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Image Data Collection</h3>
+                        <p class="de-service-card__description">Image data collection focuses on gathering datasets that include facial imagery, capturing a variety of facial expressions. This data is essential for training machine learning algorithms to recognize human features and accurately interpret emotions. By utilizing diverse and comprehensive image datasets, the goal is to enhance the performance and reliability of AI systems in understanding human behavior.</p>
+                       <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+                <!-- Text Data Collection -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/ocrc.jpg" alt="Text Data Collection" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM16 18H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Text Data Collection</h3>
+                        <p class="de-service-card__description">Text data collection involves gathering textual datasets that encompass a wide range of written content. This data is vital for training machine learning algorithms to understand natural language, identify patterns, and generate meaningful responses. By utilizing diverse and comprehensive text datasets, the aim is to enhance the performance and accuracy of AI systems in processing and interpreting human language.
+
+                        </p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- Video Data Collection -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/videoc.jpg" alt="Video Data Collection" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Video Data Collection</h3>
+                        <p class="de-service-card__description">Video data collection focuses on gathering datasets that include a variety of video content. This data is crucial for training machine learning algorithms to analyze visual information, recognize actions, and understand context. By leveraging diverse and comprehensive video datasets, the goal is to improve the performance and accuracy of AI systems in interpreting dynamic visual scenarios and human interactions.</p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- Audio Data Collection -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/audio.jpg" alt="Audio Data Collection" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Audio Data Collection</h3>
+                        <p class="de-service-card__description">Audio data collection focuses on gathering datasets that include a variety of sound recordings, such as speech, music, and environmental sounds. This data is crucial for training machine learning algorithms to recognize speech patterns, identify sounds, and understand audio context. By leveraging diverse and comprehensive audio datasets, the goal is to enhance the performance and accuracy of AI systems in processing and interpreting auditory information, enabling applications in speech recognition, sound classification, and audio analysis.</p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- Image Data Annotation -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/img anno.jpg" alt="Image Data Annotation" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                <path d="M17 7h-3v2h3v3h2v-3h3V7h-3V4h-2v3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Image Data Annotation</h3>
+                        <p class="de-service-card__description">Image annotation involves the process of labeling and tagging images with specific information to enhance their usability for machine learning purposes. This process includes identifying objects, regions, or features within images and assigning relevant metadata, such as class labels, bounding boxes, or segmentation masks. By creating detailed and accurate annotations, the aim is to train machine learning algorithms to recognize and interpret visual data effectively. High-quality image annotation is essential for improving the performance of AI systems in tasks such as object detection, image classification, and scene understanding.
+
+                        </p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- Text Data Annotation -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/ocra.jpg" alt="Text Data Annotation" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6z"/>
+                                <path d="M14 15H8v-2h6v2zm2-4H8v-2h8v2z"/>
+                                <path d="M13 9V3.5L18.5 9H13z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Text Data Annotation</h3>
+                        <p class="de-service-card__description">Text annotation involves the process of labeling and tagging textual data with specific information to enhance its usability for machine learning applications. This includes identifying entities, sentiments, or relationships within the text and assigning relevant metadata, such as category labels or part-of-speech tags. By creating detailed and accurate annotations, the goal is to train machine learning algorithms to understand and process natural language more effectively, enabling tasks such as sentiment analysis, named entity recognition, and text classification.</p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- Video Data Annotation -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/videoan.jpg" alt="Video Data Annotation" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+                                <path d="M9 9l5 3-5 3V9z"/>
+                                <path d="M14 7H6v2h8V7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Video Data Annotation</h3>
+                        <p class="de-service-card__description">Video annotation is the process of labeling and tagging video content with specific information to improve its usability for machine learning applications. This includes identifying objects, actions, or events within the video frames and assigning relevant metadata, such as bounding boxes, action labels, or temporal segments. By creating detailed and accurate annotations, the aim is to train machine learning algorithms to analyze and interpret dynamic visual content effectively, enabling applications in video surveillance, activity recognition, and automated content analysis.
+
+                        </p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- Audio Data Annotation -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/audiot.jpg" alt="Audio Data Annotation" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                                <path d="M3 9v6h4l5 5V4L7 9H3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">Audio Data Annotation</h3>
+                        <p class="de-service-card__description">Audio annotation involves the labeling and tagging of audio data with specific information to enhance its usability for machine learning tasks. This includes identifying speech segments, sounds, or specific acoustic features and assigning relevant metadata, such as transcription, speaker identification, or sound classification. By creating detailed and accurate annotations, the goal is to train machine learning algorithms to understand and process auditory information effectively, enabling applications in speech recognition, sound analysis, and audio event detection.</p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+    
+                <!-- LiDAR -->
+                <div class="de-service-card">
+                    <div class="de-service-card__image-container">
+                        <img src="/lidar.png" alt="LiDAR Services" class="de-service-card__image">
+                    </div>
+                    <div class="de-service-card__content">
+                        <div class="de-service-card__icon-container">
+                            <svg class="de-service-card__icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+                                <path d="M12 12L12 2"/>
+                                <path d="M12 12L20 12"/>
+                                <path d="M12 12L16 16"/>
+                            </svg>
+                        </div>
+                        <h3 class="de-service-card__title">LiDAR</h3>
+                        <p class="de-service-card__description">LiDAR data collection uses Light Detection and Ranging technology to capture precise spatial data, generating detailed point clouds of the environment, including terrain and infrastructure. LiDAR annotation involves labeling this data to identify and classify objects within the point clouds, such as buildings and trees. Together, these processes enhance the usability of LiDAR data for training machine learning algorithms, supporting applications like autonomous navigation, urban planning, and environmental monitoring..</p>
+                        <!-- <a href="#" class="de-service-card__link">Explore Service</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <howitwork>
+        <div class="work">
+            <div class="worktext"><H1>How It Works</H1></div>
+            <div class="workimage">
+                <img src="/work.jpeg" alt="Decode edge">
+            </div>
+        </div>
+    </howitwork>
+
+    <why>
+        <div class="header">
+            <h1>Our Services</h1>
+            <p>We provide comprehensive data collection and analysis services with a focus on quality and privacy.</p>
+        </div>
+    
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#6b46c1" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v12m-6-6h12"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">No Advance Payment</h2>
+                <p class="service-description">Nearly all service providers in the field of data collection seek advance payment for data collection.</p>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Dedicated Team</h2>
+                <p class="service-description">Our team consists of highly talented individuals with excellent skills who are empowered to build trust.</p>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#ed6c02" stroke-width="2">
+                        <path d="M12 1v22m5-18H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Reasonable Price</h2>
+                <p class="service-description">We have access to a wide range of data collecting methods and machine learning data kinds.</p>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#0288d1" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"/>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Quality Paramount</h2>
+                <p class="service-description">Artificial intelligence is becoming more competitive in today's technological world. One of the most crucial factors.</p>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#d32f2f" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Feasibility Study</h2>
+                <p class="service-description">In order to assess a plan's viability for effective implementation in any sector of work, a feasibility study is essential.</p>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#0097a7" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Utmost Privacy</h2>
+                <p class="service-description">Maintaining privacy is crucial when handling data from guarded areas like the government and healthcare sector.</p>
+            </div>
+    
+            <div class="service-card">
+                <div class="icon-container">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#7b1fa2" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Quick Response</h2>
+                <p class="service-description">The availability of the service provider whenever they are needed is a crucial component of the client experience.</p>
+            </div>
+        </div>
+    </why>
+
+    <section id="about" class="about-us">
+        <div class="about-container">
+            <div class="about-header">
+                <h1>About Decode Edge</h1>
+                <p class="about-subtitle">Empowering AI Innovation Through Quality Data</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/1.jpg" alt="About Decode Edge" class="about-img">
+                </div>
+                
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>Decode Edge is a pioneering force in AI data solutions, dedicated to advancing the frontiers of artificial intelligence through superior data collection and annotation services.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-svg">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>5+ Years Experience</h3>
+                                <p>Deep expertise in AI data solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-svg">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>100+ Clients</h3>
+                                <p>Trusted by leading AI companies</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-svg">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>24/7 Support</h3>
+                                <p>Round-the-clock expert assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-mission">
+                        <h2>Our Mission</h2>
+                        <p>To accelerate AI innovation by providing high-quality, diverse, and ethically sourced data solutions that enable our clients to build more accurate and reliable AI models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <contact id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h1>Let's talk about your project</h1>
+                <a href="mailto:info@pixwell.sk" class="email">info@pixwell.sk</a>
+                <div class="phone">+421 915 261 658</div>  
+            </div>
+    
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>How we can help you?</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="business">Business Proposal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </contact>
+
+    <footer>
+        <div class="footermain">
+            <div class="footermain1">
+                <div class="fmain1logo">
+                    <img src="/D.jpeg" alt="Decode edge">
+                    <p>Decode Edge is a leading AI data collection company, offering a wide range of datasets, including image, video, text, and speech datasets, to help you train and optimize your machine learning models. Reach out to us for tailored datasets that meet your specific AI needs. Contact us today!</p>
+                </div>
+                <div class="fmain1logo1">
+                    <img src="/loca.png" alt="Decode edge">
+                    <h1></h1>
+                    <p>Address: bestech city, Centre Mall, G-101, Dharuhera, Haryana 123106</p>
+                </div>
+                <div class="fmain1logo2">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">What we Do</a></li>
+                    <li><a href="#about">Who we are</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </div>
+            </div>
+            <div class="footermain2">
+                <div class="social-icons">
+                    <a href="https://facebook.com/decodeedge" target="_blank" rel="noopener noreferrer" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/decodeedge" target="_blank" rel="noopener noreferrer" class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/rss-feed" target="_blank" rel="noopener noreferrer" class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://plus.google.com/decodeedge" target="_blank" rel="noopener noreferrer" class="icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://flickr.com/decodeedge" target="_blank" rel="noopener noreferrer" class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    ©Copyright. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.tit a, .fmain1logo2 a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const sectionId = this.getAttribute('href');
+                    const section = document.querySelector(sectionId);
+
+                    if (section) {
+                        section.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-50% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section, contant, contact').forEach((section) => {
+                if (section.id) {
+                    observer.observe(section);
+                }
+            });
+        });
+    </script>
+
+  </body>
+</html>
