@@ -38,14 +38,14 @@
     <navbar>
         <div class="navmain">
             <div class="logo">
-                <img src="/image/log.jpeg" alt="Decode edge">
+                <img src="/image/logogo.png" alt="Decode edge">
             </div>
             <div class="titles">
                 <div class="tit">
-                    <li><a href="#home" data-section="home">Home</a></li>
+                    <li><a href="#home" >Home</a></li>
                     <li><a href="#services" data-section="services">What we Do</a></li>
                     <li><a href="#about" data-section="about">Who we are</a></li>
-                    <li><a href="#contact" data-section="contact">Contact us</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
                 </div>
             </div> 
         </div>
@@ -406,7 +406,7 @@
         </div>
     </section>
 
-    <contact id="contact">
+    <!-- <contact id="contact">
         <div class="container">
             <div class="contact-info">
                 <h1>Let's talk about your project</h1>
@@ -435,13 +435,13 @@
                 </form>
             </div>
         </div>
-    </contact>
+    </contact> -->
 
     <footer>
         <div class="footermain">
             <div class="footermain1">
                 <div class="fmain1logo">
-                    <img src="/image/log.jpeg" alt="Decode edge">
+                    <img src="/image/logogo.png" alt="Decode edge">
                     <p>Decode Edge is a leading AI data collection company, offering a wide range of datasets, including image, video, text, and speech datasets, to help you train and optimize your machine learning models. Reach out to us for tailored datasets that meet your specific AI needs. Contact us today!</p>
                 </div>
                 <div class="fmain1logo1">
@@ -453,7 +453,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">What we Do</a></li>
                     <li><a href="#about">Who we are</a></li>
-                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
                 </div>
             </div>
             <div class="footermain2">
@@ -483,49 +483,30 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.tit a, .fmain1logo2 a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const sectionId = this.getAttribute('href');
-                    const section = document.querySelector(sectionId);
-
-                    if (section) {
-                        section.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            const observerOptions = {
-                root: null,
-                rootMargin: '-50% 0px',
-                threshold: 0
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const id = entry.target.getAttribute('id');
-                        navLinks.forEach(link => {
-                            if (link.getAttribute('href') === `#${id}`) {
-                                link.classList.add('active');
-                            } else {
-                                link.classList.remove('active');
-                            }
-                        });
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('section, contant, contact').forEach((section) => {
-                if (section.id) {
-                    observer.observe(section);
-                }
-            });
-        });
+    // Get the current page URL
+    const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+    
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.tit a, .fmain1logo2 a');
+    
+    // Add active class to current page link
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Check if this link corresponds to the current page
+        if (href === currentPage || 
+            (currentPage === 'home.html' && href === '') || 
+            (currentPage === '' && href === 'home.html')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+        
+        // Remove the click event listener since we want normal page navigation
+        // No need to prevent default behavior
+    });
+});
+        
     </script>
 
   </body>
