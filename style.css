@@ -20,6 +20,9 @@ body {
     align-items: center;
     border-bottom: solid 1px #007bff;
     padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -462,18 +465,6 @@ button:hover {
         gap: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .footermain{
@@ -980,5 +971,155 @@ button:hover {
     
     .about-features {
         grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navmain {
+        flex-direction: column;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .tit {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .tit li {
+        margin: 0.5rem 0;
+    }
+
+    .cmain {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .cmain h1 {
+        font-size: 4vh;
+        line-height: 5vh;
+    }
+
+    .footermain1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fmain1logo, .fmain1logo1, .fmain1logo2 {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar Responsiveness */
+    
+    .navmain {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        position: none;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        height: 8vh;
+    }
+
+    .titles {
+        width: 100%;
+    }
+
+    .tit {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .workimage img{
+        height: 55%;
+        width:100% ;
+    }
+
+    .tit li {
+        margin: 0.5rem 0;
+        font-size: 1.8vh;
+    }
+
+    /* Home Section Responsiveness */
+    .cmain {
+        height: 60vh;
+        padding: 1rem;
+    }
+
+    .cmain h1 {
+        font-size: 4vh;
+        line-height: 5vh;
+        text-align: center;
+    }
+
+    /* Footer Responsiveness */
+    .footermain{
+        height: auto;
+    }
+    .footermain1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fmain1logo, 
+    .fmain1logo1, 
+    .fmain1logo2 {
+        width: 90%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .fmain1logo2{
+        flex-direction: row;
+    }
+    .fmain1logo1{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fmain1logo2 li {
+        margin: 0.5rem 0;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon {
+        margin: 0.5rem;
+    }
+}
+
+/* Additional Mobile Tweaks */
+@media screen and (max-width: 480px) {
+    .cmain h1 {
+        font-size: 3vh;
+        line-height: 4vh;
+    }
+
+    .navmain {
+        padding: 0.5rem;
     }
 }
